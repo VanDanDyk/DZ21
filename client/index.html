@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="c1">
+				<span class="topText">Добавление товара</span>
+				<form class="postForm" method="post">
+					<input type="text" class="name-i" placeholder="Укажите название...">
+					<input type="text" class="cost-i" placeholder="Укажите стоимость...">
+					<div class="discountInput">
+						<label>Товар на акции(-25%)?</label>
+						<input type="checkbox" class="discCB" />
+					</div>
+					<button type="button" class="addBtn">Добавить</button>
+				</form>
+			</div>
+			<div class="c2">
+				<span class="topText">Акционные товары</span>
+				<ul class="c2-container">
+				</ul>
+			</div>
+			<div class="c3">
+				<span class="topText">Все товары</span>
+				<ul class="c3-container">
+				</ul>
+			</div>
+		<script type="module" src="script.js"></script>
+	</body>
+</html>

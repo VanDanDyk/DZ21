@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	width: 65%;
+	height: 80%;
+}
+
+.container > div {
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	background: repeating-linear-gradient(-45deg, #1d1d1d80 0, #1d1d1d80 1px, transparent 1px, transparent 15px);
+	padding: 0 2%;
+}
+
+.container * {
+	font-size: 40px;
+	font-family: "Caveat";
+}
+
+.topText{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 2px solid black;
+	border-radius: 10%;
+}
+
+.postForm{
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10% 0 0 0;
+}
+
+.postForm > input{
+	width: 100%;
+	padding: 2% 1%;
+}
+
+.discountInput{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.discountInput  label{
+	font-size: 35px;
+}
+
+.discountInput  input{
+	height: 100%;
+	aspect-ratio: 1;
+}
+
+.postForm > button {
+	width: 100%;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFEC99;
+	border: 3px solid black;
+	box-shadow: 0px 5px 0px black;
+	transition: 0.2s;
+}
+
+.postForm > button:active {
+	width: 100%;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFEC99;
+	border: 3px solid black;
+	box-shadow: 0px 0px 0px black;	
+}
+
+ul{
+	overflow:  auto;
+}
+
+li{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	border: 2px solid black;
+	padding: 4%;
+	margin-top: 3%;
+}
+
+li:first-child{
+	margin-top: 0;
+}
+
+li > .costs > span:first-child{
+	text-decoration: line-through;
+	color: #868E96;
+}
+
+li > .costs > span:last-child{
+	text-decoration: none;
+	color: #4BC35F;
+}
+
+li > input{
+	width: 35%;
+}
+
+li > .costs > input{
+	width: 35%;
+}
+
+.c2-container,.c3-container{
+	padding: 10% 0 0 0;
+}
+
+
