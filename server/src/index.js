@@ -13,11 +13,9 @@ const CLIENT_URL = process.env.CLIENT_URL
 
 app.use(morgan(':method :url :status'))
 app.use(express.json())
-const allowedOrigins = [CLIENT_URL]
 app.use(
 	cors({
-		methods: ['GET', 'POST', 'DELETE', 'PATCH'],
-		origin: allowedOrigins
+		methods: ['GET', 'POST', 'DELETE', 'PATCH']
 	})
 )
 
